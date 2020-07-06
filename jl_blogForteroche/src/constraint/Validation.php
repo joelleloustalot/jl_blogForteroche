@@ -1,0 +1,26 @@
+<?php
+
+namespace App\src\constraint;
+
+class Validation
+{
+    public function validate($data, $name)
+    /*Méthode appelée depuis notre contrôleur et renvoie vers la classe ArticleValidation 
+    si c'est un article que l'on veut valider*/
+
+    {
+        if($name === 'Article') {
+            $articleValidation = new ArticleValidation();
+            $errors = $articleValidation->check($data);
+            return $errors;
+        } elseif ($name === 'Comment') {
+            $commentValidation = new CommentValidation();
+            $errors = $commentValidation->check($data);
+            return $errors;
+        } elseif ($name === 'User') {
+            $userValidation = new UserValidation();
+            $errors = $userValidation->check($data);
+            return $errors;
+        }
+    }  
+}
