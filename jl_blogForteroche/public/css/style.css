@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+
+}
+body{
+    background-image : url(../../public/img/angela-leshchinskiy-9opmgpTotJY-unsplash.jpg); 
+    
+    min-height: 100%;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.alert-primary {
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #0c39c1;
+    border-color: #b8daff;
+}
+.tr{
+    display: block;
+    text-align: center;
+    border:black solid 1 px;
+}
+.table-bordered {
+    border: 2px solid #dee2e6;    
+    margin-top: 10px;
+    margin-bottom: 40px;    
+    margin-right : 20px;
+}
+form{
+display:block;
+text-align:center;
+}
