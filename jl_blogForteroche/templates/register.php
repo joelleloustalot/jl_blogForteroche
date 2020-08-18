@@ -1,17 +1,32 @@
 <?php $this->title = "Inscription"; ?>
-<h1>Mon blog</h1>
-<p>En construction</p>
-<div>
-    <form method="post" action="../public/index.php?route=register">
-        <label for="pseudo">Pseudo</label><br>
-        <input type="text" id="pseudo" name="pseudo" value="<?= isset($post) ? htmlspecialchars($post->get('pseudo')): ''; ?>"><br>
-        <?= isset($errors['pseudo']) ? $errors['pseudo'] : ''; ?>
 
-        <label for="password">Mot de passe</label><br>
-        <input type="password" id="password" name="password"><br>
-        <?= isset($errors['password']) ? $errors['password'] : ''; ?>
-        
-        <input type="submit" value="Inscription" id="submit" name="submit">
-    </form>
-    <a href="../public/index.php">Retour à l'accueil</a>
-</div>
+<section id="contact-form">
+    <div class="container bg-dark mt-5">
+        <div class="row">
+            <div class="px-sm-5 px-lg-0 col-lg-10 offset-lg-1 mb-5 mt-5">
+                <h5 class="text-center mt-5 mb-5 text-white">Inscription</h5>
+                <form method="post" action="../public/index.php?route=register">
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="pseudo" class="text-white">Pseudo</label><br>
+                            <input type="text" class="form-control" id="pseudo" name="pseudo"
+                                placeholder="Pseudo" required
+                                value="<?= isset($post) ? htmlspecialchars($post->get('pseudo')): ''; ?>"><br>
+                            <?= isset($errors['pseudo']) ? $errors['pseudo'] : ''; ?>
+                        </div>
+
+                        <div class="form-group col-12 col-md-6">
+                            <label for="password" class="text-white">Mot de passe</label><br>
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Mot de passe" required>><br>
+                            <?= isset($errors['password']) ? $errors['password'] : ''; ?>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                        <input type="submit" class="btn btn-primary mt-4 px-4"value="Inscription" id="submit" name="submit">   
+                </form>
+            </div>
+        </div>
+    </div>
+    <a class="col-lg-12 text-center" href="../public/index.php">Retour à l'accueil</a>
+
+</section>

@@ -1,8 +1,7 @@
 <?php $this->title = "Nouvel article"; ?>
-<h1>Mon blog</h1>
-<p>En construction</p>
-<div>
+
+<div class="ml-5 mr-5">
 <?php include('form_article.php');?>
 
-    <a href="../public/index.php">Retour à l'accueil</a>
+    <a class="ml-5 mr-5 text-white"href="../public/index.php">Retour à l'accueil</a>
 </div>

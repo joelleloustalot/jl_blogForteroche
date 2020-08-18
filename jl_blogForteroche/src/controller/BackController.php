@@ -7,7 +7,7 @@ use App\config\Parameter;
 class BackController extends Controller
 {
     private function checkLoggedIn()
-    //a méthode checkLoggedIn va vérifier que l'utilisateur est connecté, sinon, le redirigera vers la page de connexion 
+    //La méthode checkLoggedIn va vérifier que l'utilisateur est connecté, sinon, le redirigera vers la page de connexion 
     {
         if(!$this->session->get('pseudo')) {
             $this->session->set('need_login', 'Vous devez vous connecter pour accéder à cette page');

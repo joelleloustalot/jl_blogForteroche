@@ -29,7 +29,8 @@ class Session
         {
             $key = $this->get($name);
             $this->remove($name);
-            return $key;
+            return '<div class="alert alert-primary" role="alert">'.$key.'</div>';
+            //return $key;
         }
     }
 

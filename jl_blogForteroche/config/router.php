@@ -54,10 +54,13 @@ class Router
                     $this->backController->deleteComment($this->request->getGet()->get('commentId'));
                 }
                 elseif($route === 'register'){
-                    $this->frontController->register($this->request->getPost());
-                }
+                    $this->frontController->register($this->request->getPost());                    
+                }  
                 elseif($route === 'login'){
-                    $this->frontController->login($this->request->getPost());
+                    $this->frontController->login($this->request->getPost());   
+                }           
+                elseif($route === 'contact'){
+                    $this->frontController->contact($this->request->getPost());  
                 }
                 elseif($route === 'profile'){
                     $this->backController->profile();

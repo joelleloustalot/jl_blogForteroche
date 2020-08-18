@@ -77,7 +77,7 @@ class FrontController extends Controller
         if($post->get('submit')) {
             $result = $this->userDAO->login($post);
             if($result && $result['isPasswordValid']) {
-                $this->session->set('login', 'Content de vous revoir');
+                $this->session->set('login', 'Ravi de vous revoir');
                 $this->session->set('id', $result['result']['id']);
                 $this->session->set('role', $result['result']['name']);
                 $this->session->set('pseudo', $post->get('pseudo'));
@@ -91,5 +91,14 @@ class FrontController extends Controller
             }
         }
         return $this->view->render('login');
+    }
+    public function contact(Parameter $post)
+    {                   if($post->get('submit')) {
+
+        $this->session->set('contact', 'Votre message a bien été envoyé');
+        header('Location: ../public/index.php');
+    }     
+            
+        return $this->view->render('contact');
     }
 }

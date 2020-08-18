@@ -6,6 +6,7 @@ class Comment
 {
     private $id;
     private $pseudo;
+    private $article_id;
     private $content;
     private $creation_date;
     private $flag;
@@ -26,6 +27,14 @@ class Comment
     public function setPseudo($pseudo)
     {
         $this->pseudo = $pseudo;
+    }
+    public function getArticle_id()
+    {
+        return $this->article_id;
+    }
+    public function setArticle_id($article_id)
+    {
+        $this->article_id = $article_id;
     }
     public function getContent()
     {
