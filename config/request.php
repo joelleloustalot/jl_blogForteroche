@@ -2,9 +2,6 @@
 
 namespace App\config;
 
-
-
-
 class Request
 {
     private $get;
