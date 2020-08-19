@@ -24,8 +24,7 @@
 </head>
 
 <body>
-    <div class="view mb-5" style="background-image : url(../public/img/angela-leshchinskiy-9opmgpTotJY-unsplash.jpg" ;
-        background-size: 100%;>
+    <div class="view mb-5" style="background-image :url('../public/img/angela-leshchinskiy-9opmgpTotJY-unsplash.jpg');background-size: 100%">
         <div class="bg-dark">
 
             <div class="container">
@@ -46,9 +45,10 @@
 
                             <ul class="navbar-nav ">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="../public/index.php"><i class="fas fa-igloo"></i>Accueil</a>
+                                    <a class="nav-link" href="../public/index.php"><i
+                                            class="fas fa-igloo"></i>Accueil</a>
                                 </li>
-                                                                
+
                                 <?php if (isset($_SESSION["role"]) && $_SESSION["role"] == "admin") { ?>
                                 <li class="nav-item active ">
 
@@ -57,33 +57,38 @@
 
                                 </li>
                                 <?php } ?>
-                                
 
-                                    <?php if (isset($_SESSION["role"])) { ?>
-                                        <li class="nav-item active ">
-                                            <a class="nav-link " href="../public/index.php?route=logout"><i class="fas fa-sign-out-alt"></i>Déconnexion</a> 
-                                        </li>
-                                        <li class="nav-item active ">
-                                            <a class="nav-link " href="../public/index.php?route=profile"><i class="fas fa-user"></i>Mon profil</a> 
-                                        </li>
-                                    <?php } else{ ?>
-                                        <li class="nav-item active ">
+
+                                <?php if (isset($_SESSION["role"])) { ?>
+                                <li class="nav-item active ">
+                                    <a class="nav-link " href="../public/index.php?route=logout"><i
+                                            class="fas fa-sign-out-alt"></i>Déconnexion</a>
+                                </li>
+                                <li class="nav-item active ">
+                                    <a class="nav-link " href="../public/index.php?route=profile"><i
+                                            class="fas fa-user"></i>Mon profil</a>
+                                </li>
+                                <?php } else{ ?>
+                                <li class="nav-item active ">
 
                                     <a class="nav-link" href="../public/index.php?route=register">Inscription</a>
-                                    </li>
-                                        <li class="nav-item active ">
+                                </li>
+                                <li class="nav-item active ">
 
-                                    <a class="nav-link " href="../public/index.php?route=login"><i class="fas fa-sign-in-alt"></i>Connexion</a>
-                                    </li>
-                                    </li>
-                                        <li class="nav-item active ">
+                                    <a class="nav-link " href="../public/index.php?route=login"><i
+                                            class="fas fa-sign-in-alt"></i>Connexion</a>
+                                </li>
+                                <li class="nav-item active ">
 
-                                    <a class="nav-link " href="../public/index.php?route=contact"><i class="fas fa-envelope-open"></i>Contact</a>
-                                    </li>
-                                    <?php } ?>
-                               
+                                    <a class="nav-link " href="../public/index.php?route=contact"><i
+                                            class="fas fa-envelope-open"></i>Contact</a>
+                                </li>
+                                <?php } ?>
+
                             </ul>
+                        </div>
                     </nav>
+
                 </div>
             </div>
         </div>
@@ -94,7 +99,7 @@
 
         </div>
 
-        
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -109,27 +114,29 @@
 
 
 
-<footer class="fixed-bottom">
-    <div class="bg-dark">
-        <div class="container"></div>
-            <div class="row mt-2">
-                <div class="col">
-                    <ul class="list-inline text-center mt-3">
+        <footer class="fixed-bottom">
+            <div class="bg-dark">
+                <div class="container"></div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <ul class="list-inline text-center mt-3">
 
-                        <li class="list-inline-item">&middot;</li>
-                        <li class="fab fa-twitter text-primary" title="Twitter"> Twitter</li>
-                        <li class="list-inline-item">&middot;</li>
-                        <li class="fab fa-facebook text-primary" title="Facebook"> Facebook</li>
-                        <li class="list-inline-item">&middot;</li>
-                        <li class="far fa-envelope text-primary" title="Contact"> Contact</li>
-                        <li class="list-inline-item">&middot;</li>
-                        <li class="far fa-file text-primary" title="Mentions légales"> Mentions légales</li>
-                    </ul>
+                            <li class="list-inline-item">&middot;</li>
+                            <li class="fab fa-twitter text-primary" title="Twitter"> Twitter</li>
+                            <li class="list-inline-item">&middot;</li>
+                            <li class="fab fa-facebook text-primary" title="Facebook"> Facebook</li>
+                            <li class="list-inline-item">&middot;</li>
+                            <li class="far fa-envelope text-primary" title="Contact"> Contact</li>
+                            <li class="list-inline-item">&middot;</li>
+                            <li class="far fa-file text-primary" title="Mentions légales"> Mentions légales</li>
+                        </ul>
+                    </div>
+
                 </div>
-
             </div>
-        </div>
+        
+    </footer>
     </div>
-</footer>
 </body>
+
 </html>

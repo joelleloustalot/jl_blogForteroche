@@ -1,4 +1,4 @@
-<div class="view" style="background-image : url(../public/img/angela-leshchinskiy-9opmgpTotJY-unsplash.jpg"; background-size: 100%;>
+<div class="view" style="background-image:url('../public/img/angela-leshchinskiy-9opmgpTotJY-unsplash.jpg');background-size:100%">
 
     <div class="container">
         <div class="row ">
@@ -13,7 +13,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../public/img/naomi-tamar-CcIEetdjBUo-unsplash.jpg" class="d-block w-100"
-                                alt="airplane on tarmac">
+                                alt="airplane in sky">
                             <div class="carousel-caption">
                                 <h1>Billet simple pour l'Alaska</h1>
                             </div>
