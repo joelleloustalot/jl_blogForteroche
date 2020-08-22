@@ -78,7 +78,6 @@
                                 href="../public/index.php?route=article&articleId=<?= htmlspecialchars($article->getId()); ?>"><?= htmlspecialchars($article->getTitle()); ?></a>
                         </h4>
                         <p class="card-text">
-                            </h2>
                             <p>Créé le : <?= htmlspecialchars($article->getCreation_date()); ?></p>
 
                             <p><?= mb_substr(strip_tags($article->getContent()), 0, 260) . "..."; ?></p>
@@ -93,8 +92,6 @@
 
         }
         ?>
-
-
         </div>
 
     </div>

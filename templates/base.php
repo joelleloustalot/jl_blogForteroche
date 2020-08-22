@@ -50,16 +50,14 @@
                                 </li>
 
                                 <?php if (isset($_SESSION["role"]) && $_SESSION["role"] == "admin") { ?>
+                                
                                 <li class="nav-item active ">
-
-                                    <a class="nav-link " href="../public/index.php?route=administration">Espace
-                                        Administration</a>
-
+                                <a class="nav-link " href="../public/index.php?route=administration">Espace Administration</a>
                                 </li>
                                 <?php } ?>
 
-
                                 <?php if (isset($_SESSION["role"])) { ?>
+
                                 <li class="nav-item active ">
                                     <a class="nav-link " href="../public/index.php?route=logout"><i
                                             class="fas fa-sign-out-alt"></i>Déconnexion</a>
@@ -68,18 +66,19 @@
                                     <a class="nav-link " href="../public/index.php?route=profile"><i
                                             class="fas fa-user"></i>Mon profil</a>
                                 </li>
-                                <?php } else{ ?>
-                                <li class="nav-item active ">
 
+                                <?php } else{ ?>
+
+                                <li class="nav-item active ">
                                     <a class="nav-link" href="../public/index.php?route=register">Inscription</a>
                                 </li>
-                                <li class="nav-item active ">
 
+                                <li class="nav-item active ">
                                     <a class="nav-link " href="../public/index.php?route=login"><i
                                             class="fas fa-sign-in-alt"></i>Connexion</a>
                                 </li>
-                                <li class="nav-item active ">
 
+                                <li class="nav-item active ">
                                     <a class="nav-link " href="../public/index.php?route=contact"><i
                                             class="fas fa-envelope-open"></i>Contact</a>
                                 </li>
